@@ -12,3 +12,8 @@ RUN pip3 install -r requirements.txt
 
 ADD . /code/
 
+EXPOSE 8000
+
+WORKDIR /code/helloworld
+
+ENTRYPOINT ../start.sh
